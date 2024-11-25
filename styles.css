@@ -1,0 +1,163 @@
+/* styles.css */
+
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth; /* Habilita el scroll suave */
+}
+
+header {
+    background: #2A75B3;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+/* Hero Section */
+.hero {
+    background: #AEDFF7;
+    color: #333;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .btn-hero {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2A75B3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Servicios */
+#servicios {
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service {
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Contacto */
+#contacto {
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea, form select, form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #2A75B3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1f5c8b;
+}
+
+/* Pie de Página */
+footer {
+    background: #2A75B3; /* Fondo azul */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Efectos de transición */
+a:hover {
+    opacity: 0.7;
+}
+
+form button {
+    transition: background-color 0.3s ease;
+}
+
+/* Efectos al pasar el mouse sobre los botones */
+form button:hover {
+    background: #1f5c8b;
+}
